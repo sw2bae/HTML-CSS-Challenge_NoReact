@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: "Concert One", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 24px;
+}
+.navbar_menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.navbar_toggleBtn {
+  color: #d49466;
+  position: absolute;
+  right: 24px;
+  font-size: 24px;
+  display: none;
+}
+.navbar_link {
+  color: #d49466;
+}
+
+footer {
+  background-color: #263343;
+  text-align: center;
+  width: 100%;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 8px 24px; */
+  }
+  .navbar_menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .navbar_menu li {
+    padding-left: 0;
+  }
+  .navbar_link {
+    align-self: center;
+    display: none;
+  }
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_link.active {
+    display: flex;
+  }
+}
