@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Concert One", cursive;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -50,7 +51,7 @@ footer {
   text-align: center;
   width: 100%;
   padding: 8px 12px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
 }
 
@@ -66,7 +67,13 @@ footer {
     display: none;
   }
   .navbar_menu li {
-    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_menu li a {
+    width: 100%;
+    padding-right: 45%;
+    padding-left: 45%;
   }
   .navbar_link {
     align-self: center;
